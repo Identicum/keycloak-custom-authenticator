@@ -1,5 +1,6 @@
 package com.identicum.keycloak;
 
+import com.google.auto.service.AutoService;
 import org.keycloak.Config;
 import org.keycloak.authentication.Authenticator;
 import org.keycloak.authentication.AuthenticatorFactory;
@@ -12,6 +13,7 @@ import org.keycloak.provider.ProviderConfigProperty;
 import java.util.Arrays;
 import java.util.List;
 
+@AutoService(AuthenticatorFactory.class)
 public class CustomAuthenticatorFactory implements AuthenticatorFactory, ConfigurableAuthenticatorFactory {
 
 	public static final String PROVIDER_ID = "custom-authenticator";
