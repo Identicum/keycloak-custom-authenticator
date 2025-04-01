@@ -14,7 +14,7 @@ import java.util.Arrays;
 import java.util.List;
 
 @AutoService(AuthenticatorFactory.class)
-public class CustomAuthenticatorFactory implements AuthenticatorFactory, ConfigurableAuthenticatorFactory {
+public class CustomAuthenticatorFactory implements AuthenticatorFactory {
 
 	public static final String PROVIDER_ID = "custom-authenticator";
 	private static final CustomAuthenticator SINGLETON = new CustomAuthenticator();
