@@ -5,7 +5,7 @@ This sample sends a custom error message when the user is locked.
 # Deployment
 ```shell script
 mvn clean package
-cp target/*.jar $KEYCLOAK_HOME/standalone/deployments/
+cp target/*.jar $KEYCLOAK_HOME/providers/
 ```
 
 # Keycloak Configuration
