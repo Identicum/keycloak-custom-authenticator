@@ -1,11 +1,11 @@
 # keycloak-custom-authenticator
 Custom Authenticator implementation to be used as a reference. 
-This sample sends a custom error message when the user is locked.
+This sample adds a custom informational message to the login form.
 
 # Deployment
 ```shell script
 mvn clean package
-cp target/*.jar $KEYCLOAK_HOME/standalone/deployments/
+cp target/*.jar $KEYCLOAK_HOME/providers/
 ```
 
 # Keycloak Configuration
